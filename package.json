@@ -1,0 +1,30 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "A burger app using MySQL, Node, Express, Handlebars, and ORM",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "^1.15.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonicaSzabo/Burger.git"
+  },
+  "engines": {
+    "node": "4.4.7"
+  },
+  "author": "Monica Szabo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonicaSzabo/Burger/issues"
+  },
+  "homepage": "https://github.com/MonicaSzabo/Burger#readme"
+}
