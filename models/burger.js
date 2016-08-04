@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
     devoured: {
       type: DataTypes.BOOLEAN,
       defaultValue: false
-    }
+    },
     date: DataTypes.TIMESTAMP
   }, {
     classMethods: {
