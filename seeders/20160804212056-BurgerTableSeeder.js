@@ -10,15 +10,18 @@ module.exports = {
       devoured: false
     }, {
       burger_name: 'Poutine on the Ritz Burger',
-      devoured: false
+      devoured: true
     }, {
       burger_name: 'Poblano Picasso Burger',
+      devoured: false
+    }, {
+      burger_name: 'Summer Thyme Burger',
       devoured: false
     }], {});
   },
 
   down: function (queryInterface, Sequelize) {
 
-    return queryInterface.bulkDelete('burger', null, {truncate:true});
+    return queryInterface.bulkDelete('burgers', null, {truncate:true});
   }
 };
