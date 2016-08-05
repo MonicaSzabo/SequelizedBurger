@@ -2,11 +2,17 @@
 
 module.exports = {
   up: function (queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('burger', [{
-      burger_name: 'Something',
+    return queryInterface.bulkInsert('burgers', [{
+      burger_name: 'Gourdon-Hamsey Burger',
       devoured: true
     }, {
-      burger_name: 'Burger 2',
+      burger_name: 'Cheeses Is Born Burger',
+      devoured: false
+    }, {
+      burger_name: 'Poutine on the Ritz Burger',
+      devoured: false
+    }, {
+      burger_name: 'Poblano Picasso Burger',
       devoured: false
     }], {});
   },

@@ -1,4 +1,6 @@
 'use strict';
+var Sequelize = require('sequelize');
+
 module.exports = function(sequelize, DataTypes) {
   var burger = sequelize.define('burger', {
     burger_name: DataTypes.STRING,
@@ -6,7 +8,16 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BOOLEAN,
       defaultValue: false
     },
-    date: DataTypes.TIMESTAMP
+    createdAt: {
+      allowNull: false,
+      type: Sequelize.DATE,
+      defaultValue: Date.now()
+    },
+    updatedAt: {
+      allowNull: false,
+      type: Sequelize.DATE,
+      defaultValue: Date.now()
+    }
   }, {
     classMethods: {
       associate: function(models) {
